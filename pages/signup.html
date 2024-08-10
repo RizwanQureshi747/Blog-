@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+
+    <!-- icon -->
+    <link rel="shourtcut icon" href="../icon/signup.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- stylesheet -->
+    <link rel="stylesheet" href="signstyle.css">
+</head>
+
+<body>
+    <div class="main">
+        <h3><a href="../index.html" class="fa-solid fa-xmark" title="close-page"></a></h3>
+        <div class="container">
+
+            <!-- Left Side -->
+            <div class="left-side">
+                <div class="left-content">
+                    <h1>Sign-Up</h1>
+                    <p>Register Your Self to enjoy our services.</p>
+                </div>
+            </div>
+
+            <!-- Right Side -->
+            <div class="right-side">
+                <div class="sign-box">
+                    <input type="text" id="name" placeholder="Name." title="Your Name">
+                    <br />
+                    <br />
+                    <input type="text" id="email" placeholder="Email." title="Your Email">
+                    <br />
+                    <br />
+                    <input type="password" id="password" placeholder="Password*" title="Password">
+                    <br />
+                    <br />
+                    <select id="selection" value="Gender" title="select Gender" style="color:green;">
+                        <option value="" selected disabled>Gender</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Not To Say!">Not To Say!</option>
+                    </select>
+                    <br />
+                    <br />
+                    <input type="text" id="age" placeholder="Age" title="Your Age">
+                    <br />
+                    <br />
+                    <br />
+                    <div class="btn">
+                        <button class="signup-btn" title="Sign up if No Account" onclick="signupHandler()">Sign Up</button>
+                        <br />
+                        <hr />
+                        <br />
+                        <a href="./signin.html" class="signin-btn" title="Sign in if you have a Account" style="text-align: center ; text-decoration: none;">Already Account ?</a>
+                    </div>
+                    <br />
+                    <div class="copyright">
+                        <p>Design & Develop By Rizwan Ahmed And Team..</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../js/signup.js" type="module"></script>
+
+</html>

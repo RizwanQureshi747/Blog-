@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.main {
+    background: rgb(255, 255, 255);
+    background: linear-gradient(339deg, rgba(255, 255, 255, 1) 0%, rgba(18, 22, 212, 1) 56%);
+    position: relative;
+}
+
+.main h3 {
+    padding: 10px 10px;
+    position: absolute;
+    right: 10px;
+}
+
+.main h3 a {
+    color: white;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.left-side {
+    width: 30%;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right-side {
+    width: 48%;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-side h1 {
+    color: white;
+    font-size: 50px;
+    text-shadow: 2px 2px 5px black;
+}
+
+.left-side p {
+    color: white;
+    text-shadow: 2px 2px 5px black;
+}
+
+.sign-box {
+    background-color: #fff;
+    min-width: 70%;
+    padding: 40px;
+    border: none;
+    border-radius: 6px;
+    box-shadow: 3px 3px 10px black;
+}
+
+.sign-box input {
+    color: #07b10a;
+    width: 100%;
+    padding: 10px;
+    outline-color: #07b10a;
+    border: none;
+    border-bottom: 1px solid blue;
+}
+
+
+.sign-box select {
+    color: #07b10a;
+    width: 100%;
+    padding: 10px;
+    /* outline: none; */
+    outline-color: #07b10a;
+    border: none;
+    border-bottom: 1px solid blue;
+}
+
+.sign-box select option {
+    padding: 50px;
+}
+
+.btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.sign-box .btn .signin-btn {
+    align-items: center;
+    color: white;
+    background: #231de3;
+    font-weight: bold;
+    border: 2px solid #231de3;
+    border-radius: 18px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.4s all ease-in-out;
+}
+
+.sign-box .btn .signin-btn:hover {
+    color: #231de3;
+    background-color: white;
+    border: 2px solid #231de3;
+    box-shadow: 1px 1px 10px #231de3;
+}
+
+.sign-box .btn .signup-btn {
+    align-items: center;
+    color: white;
+    background: #07b10a;
+    font-weight: bolder;
+    border: 2px solid #07b10a;
+    border-radius: 18px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.4s all ease-in-out;
+}
+
+
+.sign-box .btn .signup-btn:hover {
+    color: #07b10a;
+    background-color: white;
+    border: 2px solid #07b10a;
+    box-shadow: 1px 1px 10px #07b10a;
+}
+
+.copyright p {
+    font-size: 11px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Responsive for tablet */
+
+@media only screen and (max-width:836px) {
+    .container {
+        max-width: 100%;
+        min-height: 100vh;
+    }
+
+    .left-side h1 {
+        font-size: 40px;
+    }
+}
+
+
+/* Responsive for L-Mobile */
+
+@media only screen and (max-width:425px) {
+    .container {
+        max-width: 100%;
+        display: inline-block;
+    }
+
+    .left-side {
+        min-width: 100%;
+    }
+
+    .right-side {
+        min-width: 100%;
+    }
+}
+
+/* Responsive for S-Mobile */
+
+@media only screen and (max-width:320px) {
+    .right-side {
+        padding: 10px;
+    }
+
+    .sign-box {
+        padding: 20px;
+    }
+}
